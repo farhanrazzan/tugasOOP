@@ -1,0 +1,139 @@
+abstract class human
+{
+    public human(){
+    };
+ 
+    void work(){
+    };
+ 
+    public abstract void hobi();
+    public abstract void alamat();
+}
+abstract class mahasiswa extends human
+{
+    public mahasiswa(){
+    };
+ 
+    public void hobi(){
+    };
+ 
+    public void alamat(){
+    };
+}
+class karyawan extends human
+{
+    public karyawan(){
+    };
+ 
+    public void alamat(){
+      System.out.println("bandung");
+    };
+ 
+    public void work(){
+        System.out.println("administrasi");
+    };
+ 
+    public void hobi(){
+        System.out.println("reading");
+    };
+}
+abstract class dosen extends human
+{
+   public dosen(){
+    };
+ 
+   public void hobi(){
+    };
+ 
+    public void alamat(){
+    };
+}
+class maba extends mahasiswa
+{
+    public maba(){
+    }
+ 
+    public void alamat(){
+    System.out.println("jogja");
+    }
+ 
+    public void hobi(){
+    System.out.println("traveling");
+    }
+ 
+}
+class pasca extends mahasiswa
+{
+    public void namajurusan(){
+        System.out.println("teknik");
+    }
+ 
+    public pasca(){
+    }
+ 
+    public void alamat(){
+        System.out.println("bali");
+    }
+ 
+    public void hobi(){
+        System.out.println("swimming");
+    }
+}
+class social extends dosen
+{
+    public social(){
+    }
+ 
+    public void hobi(){
+        System.out.println("reading");
+    }
+ 
+    public void alamat(){
+        System.out.println("ambon");
+    }
+}
+class science extends dosen
+{
+   public void namajurusan(){
+       System.out.println("Mipa:");
+    }
+ 
+    public science(){
+    }
+ 
+    public void hobi(){
+        System.out.println("waching movies");
+    }
+ 
+    public void alamat(){
+        System.out.println("jakarta");
+    }
+}
+
+public class Main {
+
+
+    public static void main(String[] args) {
+    maba maba = new maba();
+        pasca pasca = new pasca();
+        karyawan kr = new karyawan();
+        science sc = new science();
+        social soc = new social();
+        System.out.println("class mahasiswa ");
+        maba.hobi();
+        maba.alamat();
+        pasca.hobi();
+        pasca.alamat();
+        //pasca.namajurusan();
+        System.out.println("class dosen");
+        sc.hobi();
+        sc.alamat();
+        //sc.namajurusan();
+        soc.hobi();
+        soc.alamat();
+        System.out.println("class karyawan");
+        kr.work();
+        kr.alamat();   
+    }
+    
+}
