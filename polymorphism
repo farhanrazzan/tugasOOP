@@ -1,0 +1,11 @@
+class Persegi{  
+ 	void hitung(){System.out.println("Rumus :");}  
+}  
+ 	class Nilai extends Persegi{  
+    	void hitung(){System.out.println("S x S");}  
+      
+      public static void main(String args[]){  
+        Persegi p = new Nilai();  
+        p.hitung();  
+    }
+}  
